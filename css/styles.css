@@ -3,7 +3,6 @@ body, h1, p {
     margin: 0;
     padding: 0;
     font-family: 'comic sans MS';
-    font-size: 5px;
 }
 
 header {
@@ -116,6 +115,9 @@ section {
 
 
 @media screen and (min-width: 350px) and (max-width: 550px) {
+    body{
+        font-size: 20px;
+    }
     header {
         padding: 10px;
     }
@@ -131,6 +133,9 @@ section {
 
 
 @media screen and (min-width: 550px) and (max-width: 900px) {
+    body{
+        font-size: 15px;
+    }
     header {
         padding: 15px ;
     }
@@ -145,6 +150,9 @@ section {
 }
 
 @media screen and (min-width: 900px) {
+    body{
+        font-size: 12px;
+    }
     header {
         padding: 20px ;
     }
