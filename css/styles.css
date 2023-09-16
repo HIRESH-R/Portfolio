@@ -3,6 +3,7 @@ body, h1, p {
     margin: 0;
     padding: 0;
     font-family: "Comic Sans MS","Comic Neue", "Comic Sans", cursive;
+    font-size: 18px;
 }
 
 header {
@@ -42,7 +43,7 @@ section {
 
 .Home {
     margin-top: 10px;
-    font-size: 22px;
+    
 }
 
 .about {
@@ -114,17 +115,15 @@ section {
 
 
 @media screen and (min-width: 350px) and (max-width: 550px) {
-    body{
+    body, h1, p{
         font-size: 20px;
     }
     header {
         padding: 10px;
     }
-
     nav ul li {
         margin: 10px;
     }
-
     section {
         padding: 20px;
     }
@@ -132,7 +131,7 @@ section {
 
 
 @media screen and (min-width: 550px) and (max-width: 900px) {
-    body{
+    body, h1, p{
         font-size: 15px;
     }
     header {
@@ -149,8 +148,8 @@ section {
 }
 
 @media screen and (min-width: 900px) {
-    body{
-        font-size: 12px;
+    body, h1, p{
+        font-size: 18px;
     }
     header {
         padding: 20px ;
