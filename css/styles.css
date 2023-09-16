@@ -39,7 +39,15 @@ section {
     margin-bottom: 20px;
 }
 
+.container-copy{
+    display: flex;
+    justify-content: right;
+   
+}
 
+.copy{
+    font-size: 0.78em;
+}
 
 .Home {
     margin-top: 10px;
