@@ -40,10 +40,30 @@ section {
     margin-bottom: 20px;
 }
 
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.image-content {
+    width: 200px;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 .container-copy{
     display: flex;
     justify-content: right;
-   
 }
 
 .copy{
@@ -171,5 +191,16 @@ section {
 
     section {
         padding: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Home {
+        flex-direction: column; /* Stack vertically */
+        align-items: center;
+    }
+    .image-content {
+        width: 150px;
+        margin-top: 20px;
     }
 }
