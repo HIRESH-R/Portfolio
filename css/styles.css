@@ -6,20 +6,25 @@ body, h1, p {
     font-size: 18px;
     text-align: justify;
 }
+
 header {
     background-color: #000000;
     color: #f0f0f0;
     text-align: center;
-    justify-items: center;
+    padding: 10px 0;
+    width: 100%;
 }
+
 nav ul {
     list-style: none;
     display: flex;
-    align-items: center;
-    padding: 0px;
-    justify-content: space-evenly;
+    padding: 0;
+    justify-content: space-between;
+    width: 100%;
 }
+
 nav ul li {
+    display: flex;
     align-items: center;
 }
 
@@ -29,10 +34,13 @@ nav ul li a {
     font-weight: bold;
     line-height: 20px;
     transition: font-size 0.5s ease;
+    padding: 10px 40px;
 }
-nav a:hover{
+
+nav a:hover {
     font-size: 22px;
 }
+
 section {
     padding: 50px;
     text-align: left;
@@ -48,6 +56,7 @@ section {
 
 .text-content {
     flex: 1;
+    padding-right: 100px;
 }
 
 .image-content {
@@ -60,19 +69,17 @@ section {
     display: block;
 }
 
-
-.container-copy{
+.container-copy {
     display: flex;
     justify-content: right;
 }
 
-.copy{
+.copy {
     font-size: 0.78em;
 }
 
 .Home {
     margin-top: 10px;
-    
 }
 
 .about {
@@ -81,9 +88,8 @@ section {
     border-color: rgb(3, 3, 3);
     border-width: 3px;
     margin: 20px;
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 50px;
-
 }
 
 .projects {
@@ -92,16 +98,15 @@ section {
     border-color: rgb(3, 3, 3);
     border-width: 3px;
     box-shadow: 50px;
-    margin: 20px;  
-    margin-bottom: 50px;  
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); 
+    margin: 20px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .contact {
-    
     background-color: rgb(0, 0, 0);
     color: white;
-    padding: 10px 50px 50px 50px ;
+    padding: 10px 50px 50px 50px;
     margin-bottom: 0px;
 }
 
@@ -117,7 +122,6 @@ section {
 .contact-item {
     text-align: center;
     height: 100%;
-
 }
 
 .contact-item a {
@@ -127,7 +131,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .contact-item a:hover {
@@ -140,55 +143,55 @@ section {
     width: 30px;
     margin-bottom: 5px;
     background-color: transparent;
-    
 }
 
-
 @media screen and (min-width: 350px) and (max-width: 550px) {
-    body, h1, p{
+    body, h1, p {
         font-size: 20px;
     }
     header {
         padding: 10px;
     }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
     nav ul li {
-        margin: 10px;
+        margin: 10px 0;
     }
     section {
         padding: 20px;
     }
 }
 
-
 @media screen and (min-width: 550px) and (max-width: 900px) {
-    body, h1, p{
+    body, h1, p {
         font-size: 15px;
     }
     header {
-        padding: 15px ;
+        padding: 15px;
     }
-
+    nav ul {
+        justify-content: center;
+    }
     nav ul li {
         margin: 15px;
     }
-
     section {
         padding: 30px;
     }
 }
 
 @media screen and (min-width: 900px) {
-    body, h1, p{
+    body, h1, p {
         font-size: 18px;
     }
     header {
-        padding: 20px ;
+        padding: 20px;
     }
-
     nav ul li {
         margin: 20px;
     }
-
     section {
         padding: 50px;
     }
@@ -196,7 +199,7 @@ section {
 
 @media (max-width: 768px) {
     .Home {
-        flex-direction: column; /* Stack vertically */
+        flex-direction: column;
         align-items: center;
     }
     .image-content {
